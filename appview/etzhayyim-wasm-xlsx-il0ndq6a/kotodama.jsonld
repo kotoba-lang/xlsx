@@ -1,0 +1,81 @@
+{
+  "@context": "https://etzhayyim.com/ns/kotodama/v1",
+  "@id": "did:web:xlsx.etzhayyim.com",
+  "component": {
+    "env": {},
+    "path": "component.wasm"
+  },
+  "convoSystemPrompt": "You are etzhayyim-wasm-xlsx agent. Excel editor — upload, edit spreadsheets with formula evaluation, and export XLSX workbooks. Kagami graph persistence with DuckDB-WASM client reads. Respond helpfully in the users language.",
+  "deploy": {},
+  "duties": [
+    "勤労の義務"
+  ],
+  "governance": {
+    "raci": "responsible",
+    "classification": "internal",
+    "complianceFrameworks": [
+      "document-management-policy"
+    ]
+  },
+  "kpi": [
+    "credits の獲得"
+  ],
+  "name": "etzhayyim-wasm-xlsx",
+  "nanoid": "il0ndq6a",
+  "performerType": "service",
+  "profile": {
+    "agentType": "semi-autonomous",
+    "capabilities": [
+      "workbook-management",
+      "sheet-editing",
+      "workbook-search"
+    ],
+    "description": "Excel editor — upload, edit spreadsheets with formula evaluation, and export XLSX workbooks.",
+    "displayName": "XLSX Editor",
+    "isBot": true
+  },
+  "project": "xlsx",
+  "routes": [
+    {
+      "host": "xlsx.etzhayyim.com",
+      "paths": [
+        "/"
+      ],
+      "tls": true
+    }
+  ],
+  "runtimeType": "worker",
+  "space": {
+    "channels": [
+      {
+        "default": true,
+        "description": "Public workbook feed — shared spreadsheets and data highlights",
+        "kind": "public",
+        "name": "xlsx-feed"
+      }
+    ],
+    "description": "Excel editor — XLSX upload, grid editing, formula evaluation, export",
+    "historyVisibility": "world-readable",
+    "joinRule": "public",
+    "name": "XLSX Editor"
+  },
+  "triggers": {
+    "subscribeRepos": {
+      "collections": [
+        "app.bsky.feed.post",
+        "app.bsky.feed.like",
+        "app.bsky.graph.follow",
+        "com.etzhayyim.apps.xlsx.workbook",
+        "com.etzhayyim.apps.xlsx.sheet",
+        "com.etzhayyim.apps.xlsx.cell",
+        "com.etzhayyim.apps.xlsx.style",
+        "com.etzhayyim.apps.xlsx.chart",
+        "com.etzhayyim.apps.xlsx.table",
+        "com.etzhayyim.apps.xlsx.definedName",
+        "com.etzhayyim.apps.xlsx.workbookTemplate"
+      ]
+    }
+  },
+  "uiType": "appview",
+  "embedUrl": "https://il0ndq6a.etzhayyim.com/embed"
+}

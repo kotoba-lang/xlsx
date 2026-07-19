@@ -1,0 +1,24 @@
+{
+  "name": "xlsx-editor-ui",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "svelte": "^5.55.3"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.1.1",
+    "svelte": "^5.55.3",
+    "svelte-check": "^4.4.6",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.2",
+    "@sveltejs/adapter-cloudflare": "^7.2.8",
+    "@sveltejs/kit": "^2.57.1"
+  }
+}

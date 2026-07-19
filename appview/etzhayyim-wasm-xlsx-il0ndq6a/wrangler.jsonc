@@ -1,0 +1,45 @@
+{
+  "name": "kotodama-il0ndq6a",
+  "main": "svelte/.svelte-kit/cloudflare/_worker.js",
+  "compatibility_date": "2025-03-17",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_als"
+  ],
+  "assets": {
+    "directory": "./svelte/.svelte-kit/cloudflare/client",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "single-page-application"
+  },
+  "vars": {
+    "APP_ACTOR_HANDLE": "xlsx",
+    "APP_CAPABILITIES": "[\"workbook-management\",\"sheet-editing\",\"workbook-search\"]",
+    "APP_DESCRIPTION": "Excel editor — upload, edit spreadsheets with formula evaluation, and export XLSX workbooks.",
+    "APP_DISPLAY_NAME": "XLSX Editor",
+    "APP_EMBED_URL": "https://il0ndq6a.etzhayyim.com/embed",
+    "APP_FRAMEWORK": "sveltekit-edge-bff",
+    "AGENTGATEWAY_MCP_ROUTER_URL": "https://mcp.etzhayyim.com/xrpc/com.etzhayyim.mcp.message",
+    "APP_NANOID": "il0ndq6a",
+    "APP_PERFORMER_TYPE": "service",
+    "APP_UI_TYPE": "appview"
+  },
+  "rules": [
+    {
+      "type": "CompiledWasm",
+      "globs": [
+        "**/*.wasm"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "il0ndq6a.etzhayyim.com/*",
+      "zone_name": "etzhayyim.com"
+    },
+    {
+      "pattern": "xlsx.etzhayyim.com/*",
+      "zone_name": "etzhayyim.com"
+    }
+  ]
+}
