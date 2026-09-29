@@ -106,7 +106,7 @@ Upload (.xlsx ZIP / .csv)
 
 ```
 60-apps/etzhayyim-project-xlsx/
-├── CLAUDE.md                            # This file
+├── AGENTS.md                            # This file
 ├── COMPATIBILITY.md                     # Excel API / Google Sheets API coverage matrix
 ├── COVERAGE.md                          # Test coverage report
 ├── wit/xlsx/package.wit                  # Domain WIT capability (3 interfaces)
